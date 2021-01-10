@@ -1,12 +1,20 @@
-import re
-name = input("Enter file:")
-if len(name) < 1 : name = "regex_sum_355909.txt"
-handle = open(name)
-x=list()
-for line in handle:
-    y=re.findall('[0-9]+',line)
-    x=x+y
-sum=0
-for i in x:
-    sum=sum + int(i)
-print (sum)
+# Python 3 code to find sum  
+# of elements in given array 
+def _sum(arr,n): 
+      
+    # return sum using sum  
+    # inbuilt sum() function 
+    return(sum(arr)) 
+  
+# driver function 
+arr=[] 
+# input values to list 
+arr = [3,5,7,4] 
+  
+# calculating length of array 
+n = len(arr) 
+  
+ans = _sum(arr,n) 
+  
+# display sum 
+print ('Sum of the array is ', ans) 
